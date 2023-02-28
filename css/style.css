@@ -1,0 +1,583 @@
+ul li {
+  list-style: none;
+}
+
+/* ============= */
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.company {
+  background-color: black;
+  color: white;
+}
+
+.company__text {
+  padding: 10px;
+}
+
+.header-info__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-info__phone {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.header-info__link-phone {
+  position: relative;
+  font-size: 18px;
+}
+
+.header-info__link-phone::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/icons/telephone-outbound.svg);
+  background-size: cover;
+  height: 15px;
+  width: 15px;
+  top: 6px;
+  left: 0px;
+}
+
+.header-info__link-phone:hover {
+  border-bottom: 1px solid #000;
+}
+
+.header-info__link-btn {
+  display: block;
+  overflow: hidden;
+  margin: 5% 0;
+  padding: 7px 10px 7px 10px;
+  background-color: #ea1938;
+  border: 3px solid #ea1938;
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: bold;
+  transition: all 0.9s;
+}
+
+.header-info__link-btn:hover {
+  background-color: transparent;
+  border: 3px solid #ea1938;
+  border-radius: 25px;
+  color: black;
+}
+
+/* ====navigation===== */
+/* =======header-bg======= */
+.header-bg {
+  background-image: url(../images/admiral-img/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+}
+
+.header-bg__info {
+  background-color: rgba(243, 243, 243, 0.338);
+}
+
+.header-bg__title {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+  color: black;
+  text-transform: uppercase;
+}
+
+.header-bg__text {
+  background-color: rgba(255, 255, 255, 0.503);
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+/* ======work-icons===== */
+.work-icons {
+  background-color: #F3F3F3;
+}
+
+.work-icons__img {
+  max-width: 80px;
+  margin: 0 auto;
+}
+
+/* ======types-stretch====== */
+.types-stretch__card {
+  position: relative;
+  /* 	background-image: url(../images/admiral-img/glyanec.jpg);
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	min-height: 250px; */
+}
+
+.types-stretch__card-body {
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+}
+
+.types-stretch__img {
+  min-height: 275px;
+  width: 100%;
+}
+
+.types-stretch__card:hover .overlay {
+  opacity: 1;
+}
+
+.types-stretch__title {
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+.types-stretch__list {
+  padding: 0;
+}
+
+.types-stretch__item {
+  position: relative;
+  padding-left: 17px;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* .types-stretch__item::before {
+	position: absolute;
+	content: '';
+	background-image: url(../images/icons/check2-circle.svg);
+	background-size: cover;
+	height: 15px;
+	width: 15px;
+	top: 5px;
+	left: 0;
+} */
+.types-stretch-button {
+  color: #fff;
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(38, 192, 92, 0.4156862745);
+}
+
+.types-stretch-btn {
+  font-size: 15px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  border: 3px solid #fff;
+  border-radius: 25px;
+  opacity: 80%;
+  padding: 5px 20px 5px 20px;
+}
+
+.types-stretch-btn:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+/* =====advantages======= */
+.advantages__card-img {
+  margin: 0 auto;
+  max-width: 80px;
+}
+
+.advantages__card-title {
+  font-size: 17px;
+}
+
+.advantages__card-text {
+  font-size: 13px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.th-w150 {
+  min-width: 150px;
+}
+
+.th-w250 {
+  min-width: 250px;
+}
+
+/* ============== */
+.decision {
+  background-color: #F3F3F3;
+}
+
+.decision__row-border {
+  border: 1px solid rgba(0, 0, 0, 0.225);
+  margin-bottom: 15px;
+  box-shadow: 4px 5px 9px 1px rgba(0, 0, 0, 0.74);
+}
+
+.decision__img {
+  height: 100%;
+  width: 100%;
+}
+
+.decision__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.decision__text {
+  font-size: 15px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.225);
+}
+
+.decision__title-price {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 28px;
+  color: #e31e24;
+}
+
+.decision__text-price {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.decision__text-price--icon-1 {
+  position: relative;
+  padding-left: 25px;
+}
+.decision__text-price--icon-1::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/admiral-img/icon12.svg);
+  background-size: cover;
+  height: 17px;
+  width: 16px;
+  top: 0;
+  left: 0;
+}
+
+.decision__text-price--icon-2 {
+  position: relative;
+  padding-left: 25px;
+}
+.decision__text-price--icon-2::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/admiral-img/icon23.svg);
+  background-size: cover;
+  height: 17px;
+  width: 16px;
+  top: 0;
+  left: 0;
+}
+
+.decision__card-bg {
+  background-color: #F3F3F3;
+}
+
+/* =======info-text======= */
+.info-text__item {
+  position: relative;
+  padding-left: 20px;
+}
+.info-text__item::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/icons/clipboard-check.svg);
+  background-size: cover;
+  height: 12px;
+  width: 12px;
+  top: 5px;
+  left: 0;
+}
+
+/* ============calculate============ */
+.calculate {
+  min-height: 400px;
+  background-color: #F3F3F3;
+}
+
+/* ==========more-info=========== */
+.more-info__plus-item {
+  position: relative;
+  padding-left: 20px;
+}
+.more-info__plus-item::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/icons/hand-thumbs-up.svg);
+  background-size: cover;
+  height: 15px;
+  width: 15px;
+  top: 5px;
+  left: 0;
+}
+
+.more-info__minus-item {
+  position: relative;
+  padding-left: 20px;
+}
+.more-info__minus-item::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/icons/hand-thumbs-down.svg);
+  background-size: cover;
+  height: 15px;
+  width: 15px;
+  top: 5px;
+  left: 0;
+}
+
+/* ========gallary========== */
+.gallary {
+  background-color: #F3F3F3;
+}
+
+.gallary__hid {
+  overflow: hidden;
+}
+
+.gallary__img {
+  height: auto;
+  width: 100%;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.gallary__img:hover {
+  transform: scale(1.3);
+}
+
+/* =======reviews======== */
+.reviews__card-shad {
+  box-shadow: 4px 5px 9px 1px rgba(0, 0, 0, 0.74);
+}
+
+.reviews__icons {
+  max-width: 100px;
+  float: left;
+}
+
+.reviews__card-btn {
+  max-width: 200px;
+  border: 3px solid #B8B8B8;
+  border-radius: 15px;
+  transition: all 0.7s;
+}
+.reviews__card-btn:hover {
+  color: #fff;
+  background-color: #B8B8B8;
+  border: 3px solid black;
+}
+
+.reviews__card-link {
+  padding: 0px 0px 0px 0px;
+}
+
+/* ========certificates======= */
+.certificates__card {
+  overflow: hidden;
+  box-shadow: 4px 5px 9px 1px rgba(0, 0, 0, 0.74);
+}
+
+.certificates__img {
+  height: auto;
+  width: 100%;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.certificates__img:hover {
+  transform: scale(1.1);
+}
+
+/* ========our-team========= */
+.our-team {
+  background-color: #F3F3F3;
+}
+
+.our-team__card {
+  background: transparent;
+  align-items: center;
+}
+
+.our-team__img {
+  box-shadow: 4px 5px 9px 1px rgba(0, 0, 0, 0.74);
+  max-width: 170px;
+}
+
+/* ===========payment============ */
+.payment__card-info {
+  background-color: #EEEEEE;
+}
+
+.payment__card-title {
+  font-weight: bold;
+}
+
+.payment__card-list {
+  padding: 0px 0px 0px 0px;
+  color: #333;
+}
+
+.payment__card-item {
+  position: relative;
+  font-size: 14px;
+  padding: 0px 0px 0px 35px;
+  margin: 0px 0px 25px 0px;
+}
+.payment__card-item::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/admiral-img/pay-icon-1.png);
+  background-size: cover;
+  height: 15px;
+  width: 27px;
+  top: 2px;
+  left: 0;
+}
+
+.payment__card-info-pay {
+  background-image: url(../images/admiral-img/pay-bg-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.payment__card-title-pay {
+  color: #fff;
+  font-weight: bold;
+}
+
+.payment__card-text-pay {
+  font-size: 16px;
+  color: #fff;
+}
+
+.payment__icon-1 {
+  position: relative;
+  padding-left: 60px;
+}
+.payment__icon-1::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/admiral-img/pay-1.png);
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  top: -10px;
+  left: 0;
+}
+
+.payment__icon-2 {
+  position: relative;
+  padding-left: 60px;
+}
+.payment__icon-2::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/admiral-img/pay-2.png);
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  top: -10px;
+  left: 0;
+}
+
+.payment__icon-3 {
+  position: relative;
+  padding-left: 60px;
+}
+.payment__icon-3::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/admiral-img/pay-3.png);
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  top: -10px;
+  left: 0;
+}
+
+.payment__icon-4 {
+  position: relative;
+  padding-left: 60px;
+}
+.payment__icon-4::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/admiral-img/pay-4.png);
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  top: -10px;
+  left: 0;
+}
+
+/* ===========stages-work============ */
+.stages-work {
+  background-color: #F3F3F3;
+}
+
+.stages-work__card {
+  background: transparent;
+}
+
+.stages-work__img {
+  margin: 0 auto;
+  height: auto;
+  max-width: 180px;
+  border-radius: 50%;
+  box-shadow: 4px 5px 9px 1px rgba(0, 0, 0, 0.74);
+}
+
+/* ====================== */
+.partners__card {
+  opacity: 40%;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+.partners__card:hover {
+  opacity: 1;
+  border: 1px solid blue;
+}
+
+.partners__img {
+  width: 100%;
+}
+
+.partners__title {
+  font-size: 16px;
+  color: #2e2e2e;
+}
+
+/* =========footer=========== */
+.footer {
+  background-color: #F3F3F3;
+}
+
+.footer__title {
+  color: #333333;
+  font-size: 16px;
+  padding: 30px 0px 20px 0px;
+}
